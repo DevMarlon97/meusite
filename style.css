@@ -87,7 +87,7 @@ a {
 .foto {
     position: absolute;
     inset: 0;
-    background-image: url("/fundo.jpg");
+    background-image: url("fundo.jpg");
     background-size: cover;
     background-position: center;
     filter: brightness(0.2);
@@ -99,7 +99,7 @@ a {
 .fotobarbeiro {
     position: absolute;
     inset: 0;
-    background-image: url("barbeiro\ 1.png");
+    background-image: url("barbeiro 1.png");
     top: -3%;
     left: 22%;
     background-repeat: no-repeat;
@@ -154,7 +154,7 @@ a {
 }
 
 .corte{
-    background-image: url(/cabelo1.png);
+    background-image: url(cabelo1.png);
     background-size: contain;
     background-repeat: no-repeat;
       filter: brightness(0.8);
@@ -197,7 +197,7 @@ a {
 }
 
 .barba{
-    background-image: url(/barba1.png);
+    background-image: url(barba1.png);
     background-size: contain;
     background-repeat: no-repeat;
       filter: brightness(0.8);
@@ -243,7 +243,7 @@ a {
 }
 
 .pacote{
-    background-image: url(/pacote1.png);
+    background-image: url(pacote1.png);
     background-size: contain;
     background-repeat: no-repeat;
       filter: brightness(0.8);
