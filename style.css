@@ -181,10 +181,17 @@ a {
 }
 
 .but {
-    background-color: #FFFFFF;
-    border: grey solid 2px;
-    border-radius: 4px;
+    background-color: rgba(255, 255, 255, 0.03); /* só 3% de branco */
+    backdrop-filter: blur(2px); 
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: white;
+       border-radius: 4px;
     padding: 5px;
+    transition: 0.9s;
+}
+
+.but:hover{
+    transform: scale(1.2);
 }
 
 .rodape {
