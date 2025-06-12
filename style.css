@@ -200,6 +200,11 @@ a {
     width: 100%;
 }
 
+.contatos{display: flex;
+flex-direction: column;
+text-align: center;
+}
+
 .container {
     background-color: var(--background);
     border-top: #D4AF37 solid 3px;
