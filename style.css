@@ -87,7 +87,7 @@ a {
 .foto {
     position: absolute;
     inset: 0;
-    background-image: url("/Design-De-Interiores-Para-Barbearia-17.jpg");
+    background-image: url("/fundo.jpg");
     background-size: cover;
     background-position: center;
     filter: brightness(0.2);
