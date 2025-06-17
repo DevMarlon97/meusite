@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CODO BARBEARIA - Estilo Clássico</title>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header Simples -->
+    <header class="header">
+        <nav class="nav-container">
+            <div class="logo-section">
+                <div class="logo-img">C</div>
+                <div class="logo-text">
+                    <h1>CODO BARBEARIA</h1>
+                    <h2>ESTILO CLÁSSICO</h2>
+                </div>
+            </div>
+
+            <ul class="nav-menu">
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#servicos">Serviços</a></li>
+                <li><a href="#planos">Planos</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+
+            <div class="menu-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <ul>
+            <li><a href="#inicio" onclick="closeMobileMenu()">Início</a></li>
+            <li><a href="#servicos" onclick="closeMobileMenu()">Serviços</a></li>
+            <li><a href="#planos" onclick="closeMobileMenu()">Planos</a></li>
+            <li><a href="#contato" onclick="closeMobileMenu()">Contato</a></li>
+        </ul>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero" id="inicio">
+        <div class="hero-content">
+            <h1 class="hero-headline">Uma experiência pensada para o homem moderno</h1>
+            <p class="hero-subtext">Atendimento de qualidade e estilo impecável em cada detalhe!</p>
+            <a href="#planos" class="cta-button">Conheça Nossos Planos</a>
+        </div>
+    </section>
+
+    <!-- Seção de Planos -->
+    <section class="planos" id="planos">
+        <div class="planos-container">
+            <h2 class="planos-title">Nossos Planos</h2>
+            <p class="planos-subtitle">Escolha o plano ideal para o seu estilo</p>
+            
+            <div class="planos-grid">
+                <div class="plano-card">
+                    <h4>BÁSICO</h4>
+                    <div class="preco">R$ 35</div>
+                    <ul>
+                        <li>Corte tradicional</li>
+                        <li>Lavagem</li>
+                        <li>Finalização</li>
+                        <li>Atendimento personalizado</li>
+                    </ul>
+                    <a href="https://wa.me/554784896886?text=Olá%2C%20gostaria%20de%20agendar%20o%20plano%20básico%20da%20Barbearia%20Codo.%20Poderia%20me%20passar%20as%20disponibilidades%2C%20por%20gentileza%3F
+                    ">
+                    <button class="plano-btn">Escolher Plano</button>
+                </a>
+                </div>
+
+                <div class="plano-card">
+                    <h4>PREMIUM</h4>
+                    <div class="preco">R$ 55</div>
+                    <ul>
+                        <li>Corte + Barba</li>
+                        <li>Lavagem</li>
+                        <li>Tratamento capilar</li>
+                        <li>Finalização premium</li>
+                        <li>Produtos de qualidade</li>
+                    </ul>
+                    <a href="https://wa.me/554784896886?text=Olá%2C%20gostaria%20de%20agendar%20o%20plano%20premium%20da%20Barbearia%20Codo.%20Poderia%20me%20passar%20as%20disponibilidades%2C%20por%20gentileza%3F
+                    ">
+                    <button class="plano-btn">Escolher Plano</button>
+                </a>
+                </div>
+
+                <div class="plano-card">
+                    <h4>EXECUTIVO</h4>
+                    <div class="preco">R$ 75</div>
+                    <ul>
+                        <li>Corte + Barba + Bigode</li>
+                        <li>Lavagem</li>
+                        <li>Tratamento completo</li>
+                        <li>Massagem relaxante</li>
+                        <li>Finalização de luxo</li>
+                        <li>Atendimento VIP</li>
+                    </ul>
+                    <a href="https://wa.me/554784896886?text=Olá%2C%20gostaria%20de%20agendar%20o%20plano%20executivo%20da%20Barbearia%20Codo.%20Poderia%20me%20informar%20as%20disponibilidades%2C%20por%20gentileza%3F
+                    ">
+                    <button class="plano-btn">Escolher Plano</button>
+                </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="contato">
+        <div class="footer-container">
+            <h3 class="footer-logo">CODO BARBEARIA</h3>
+            <p class="footer-info">
+                Tradição e modernidade em cada corte.<br>
+                Venha viver uma experiência única conosco.
+            </p>
+            
+            <div class="footer-contact">
+                <span>📍 Rua das Tradições, 123 - Centro</span>
+                <span>📞 (43) 99999-9999</span>
+                <span>⏰ Seg-Sáb: 8h às 18h</span>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Codo Barbearia. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Menu Toggle
+        const menuToggle = document.getElementById('menuToggle');
+        const mobileMenu = document.getElementById('mobileMenu');
+
+        menuToggle.addEventListener('click', () => {
+            menuToggle.classList.toggle('active');
+            mobileMenu.classList.toggle('active');
+            document.body.style.overflow = mobileMenu.classList.contains('active') ? 'hidden' : 'auto';
+        });
+
+        function closeMobileMenu() {
+            menuToggle.classList.remove('active');
+            mobileMenu.classList.remove('active');
+            document.body.style.overflow = 'auto';
+        }
+
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Close mobile menu when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!menuToggle.contains(e.target) && !mobileMenu.contains(e.target)) {
+                closeMobileMenu();
+            }
+        });
+    </script>
+</body>
+</html>
